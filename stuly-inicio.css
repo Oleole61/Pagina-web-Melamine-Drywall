@@ -1,0 +1,225 @@
+/*encabezado de las paginas*/
+
+html{
+    margin: 0;
+    padding: 0;
+     
+}
+header{
+    position: sticky;
+    display: flex;
+    top: 0;
+    background-color:#1d1003;
+    height: 100px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    margin-top: 1%; 
+    margin-left: 10%;
+    margin-right: 4%;
+    gap: 50px; 
+    color: white;
+    transition: 2s;
+    font-size: 22px;
+    
+}
+
+
+nav a:hover{
+     color: white;
+    transform: translateY(-3px);
+
+}
+
+nav a{
+    color: white; 
+    text-decoration: none;
+}
+
+
+
+header img {
+  max-width: 200px;
+  height: 75px;
+  margin: 1%;
+  margin-left: 25%;
+  
+  
+}
+/*Fin de header*/
+
+
+/*inicio de body*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("Imagenes/Escritorio4K.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(4px);
+    z-index: -1;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+}
+
+
+/*Fin del body*/
+
+/*Inicio del main*/
+main{
+    display: flex;
+    gap: 1%;
+    
+}
+
+.article1{
+   position: relative ;
+    width: 40%;
+    margin: 10px;
+    flex: 1;
+    
+    
+}
+/*Imagenes de Inicio*/
+.img1{
+  position: absolute;
+  left: 1%;
+  
+  max-height:  700px;
+  max-width: 750px;
+  z-index: 1; 
+  transition: 0.3s; 
+  animation: fadeIn 1s ease;
+}
+
+.img2{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    max-height: 450px;
+    max-width: 550px;
+    z-index: 2;
+    transition: 0.3s ;  
+    animation: fadeIn 2s ease;
+}
+
+/*Animaciones de imagenes*/
+.img1:hover{
+    transform: scale(1.05);
+   
+}
+
+.img2:hover{
+transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Texto de main*/
+.descripcion{
+    width: 45%;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 2px 8px rgba(0,0, 0, 0.8);
+}
+/*Decoraciones del Texto*/
+h1{ 
+    /*
+  font-size: 10vh;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 30px;
+  */
+  font-size: clamp(40px, 5vw, 100px); /* adaptable a pantalla */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.2; /* espacio entre líneas */
+}
+    
+
+h3{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.descripcion p{
+    font-size: 20px;
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.carrusel {
+    display: flex;
+    width: 50%;;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+/* ocultar barra fea */
+.carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+.element {
+    flex: 0 0 550px;
+    height: 70vh;
+    background: rgba(255,0,0,0.7);
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    scroll-snap-align: center;
+    color: white;
+
+   
+
+
+}
+
+.element img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* 🔥 clave */
+    border-radius: 15px;
+}
+

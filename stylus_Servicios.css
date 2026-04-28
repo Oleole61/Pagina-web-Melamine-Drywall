@@ -1,0 +1,174 @@
+/*encabezado de las paginas*/
+
+html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 232, 138); 
+     
+}
+header{
+    position: sticky;
+    display: flex;
+    top: 0;
+   background-color: rgba(153, 101, 21, 1);
+   height: 100px;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+   z-index: 1000;
+}
+
+nav{
+    display: flex;
+    margin-top: 1%; 
+    margin-left: 10%;
+    margin-right: 4%;
+    gap: 50px; 
+    color: white;
+    transition: 2s;
+    font-size: 22px;
+    
+}
+
+
+nav a:hover{
+    color: rgb(231, 223, 70);
+    transform: translateY(-3px);
+
+}
+
+nav a{
+    color: rgb(255,253, 208);   
+    text-decoration: none;
+}
+
+
+
+header img {
+  max-width: 200px;
+  height: 75px;
+  margin: 1%;
+  margin-left: 25%;
+  
+}
+/*Fin de header*/
+
+/*Inicio de body*/
+body{
+    margin: 0;
+}
+/*Fin del body*/
+
+h1{
+    color:rgb(85, 52, 3);   
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    margin: 20px;
+    animation: aparicion 2s ease;
+}
+
+#Contendormostrario{
+    border-radius: 10px;
+    background-color:rgba(153, 101, 21, 0.1);
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+
+
+
+
+.filas{
+    display: flex;
+    /*estos ayudn a centrar los hijos de un <>*/
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    animation: aparicion 2s ease;
+
+    
+}
+
+.caja{
+   border: 1px  #ddd solid;
+   border-radius: 5px;
+   background-color: #F5F5F5;
+   box-shadow: 10px 9px 6px rgba(0,0,0,0.5);
+   height: 450px;
+    width: 300px;
+    transition: 0.3s ease;
+}
+
+.caja img{
+     width: 100.5%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.imagen-contenedor{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    
+}
+
+.imagen-contenedor img{
+     position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.ima2{
+    opacity: 0;
+}
+
+.caja:hover .ima2{
+    opacity: 1;
+}
+
+.caja:hover .ima1{
+    opacity: 0;
+}
+
+
+.caja:hover {
+    transform: translateY(-3px)
+}
+
+
+
+.inferior{
+    background-color:rgb(53, 31, 3);
+    width: 100.5%;
+    height: 44.6%  ;
+    border-radius: 0 0 5px 5px ;
+    
+}
+
+.inferior p{
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+@keyframes aparicion{
+    from{
+        opacity: 0;
+        transform:translateY(20px) ;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.center{
+    text-align: center;
+}
