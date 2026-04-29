@@ -56,9 +56,10 @@ header img {
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
-    overflow: hidden;
+    /* solo bloquea scroll horizontal */
+    overflow-x: hidden;
     
 }
 body::before{
@@ -145,6 +146,7 @@ transform: scale(1.05);
 
 /*Texto de main*/
 .descripcion{
+    margin-left: 10px;
     width: 45%;
     text-align: center;
     color: white;
@@ -152,14 +154,7 @@ transform: scale(1.05);
 }
 /*Decoraciones del Texto*/
 h1{ 
-    /*
-  font-size: 10vh;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  margin-bottom: 30px;
-  */
+   
   font-size: clamp(40px, 5vw, 100px); /* adaptable a pantalla */
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -221,5 +216,35 @@ h3{
     height: 100%;
     object-fit: cover;   /* 🔥 clave */
     border-radius: 15px;
+}
+
+/*Inicio Footer*/
+footer{
+    background-color:#1d1003;
+    
+   
+}
+
+.textofooter{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+.textofooter h2{
+   
+    color: white;
+   text-decoration: underline;
+}
+.textofooter p{
+    color: white;
+}
+
+iframe{
+    min-width: 300px;
+    min-height: 250px;
+    border-radius: 10px;
 }
 
