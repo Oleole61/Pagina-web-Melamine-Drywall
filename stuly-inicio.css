@@ -100,49 +100,7 @@ main{
     
     
 }
-/*Imagenes de Inicio*/
-.img1{
-  position: absolute;
-  left: 1%;
-  
-  max-height:  700px;
-  max-width: 750px;
-  z-index: 1; 
-  transition: 0.3s; 
-  animation: fadeIn 1s ease;
-}
 
-.img2{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    max-height: 450px;
-    max-width: 550px;
-    z-index: 2;
-    transition: 0.3s ;  
-    animation: fadeIn 2s ease;
-}
-
-/*Animaciones de imagenes*/
-.img1:hover{
-    transform: scale(1.05);
-   
-}
-
-.img2:hover{
-transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /*Texto de main*/
 .descripcion{
@@ -178,25 +136,75 @@ h3{
   font-style: normal;
 }
 
+/*Carrusel parte inicio*/
+.contenedor-carrusel{
+    position: relative;
+    width: 50%;
+}
+
 .carrusel {
+    
     display: flex;
-    width: 50%;;
+    width: 100%;
     gap: 20px;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type:x mandatory;
     scroll-behavior: smooth;
     padding: 20px;
+    z-index: 1;
 }
 
+
+#next, #prev {
+    position: absolute;
+    top: 50%;
+    border: none;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    opacity: 0;
+    
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+/*
+#next:hover, #prev:hover{
+    animation: aparicionespontanea 0.3s forwards;
+}
+*/
+.contenedor-carrusel:hover  #prev{
+    animation: aparicionespontanea 0.3s forwards;
+}
+.contenedor-carrusel:hover  #next{
+   animation: aparicionespontanea 0.3s forwards;
+}
+
+@keyframes aparicionespontanea{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 /* ocultar barra fea */
 .carrusel::-webkit-scrollbar {
     display: none;
 }
 
 .element {
-    flex: 0 0 550px;
+    flex: 0 0 600px;
     height: 70vh;
-    background: rgba(255,0,0,0.7);
     border-radius: 15px;
 
     display: flex;
@@ -205,16 +213,12 @@ h3{
 
     scroll-snap-align: center;
     color: white;
-
-   
-
-
 }
 
 .element img{
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* 🔥 clave */
+    object-fit: cover;   
     border-radius: 15px;
 }
 
