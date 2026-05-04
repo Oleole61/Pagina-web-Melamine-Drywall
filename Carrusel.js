@@ -6,7 +6,6 @@ document.getElementById("next").addEventListener("click",() =>{
 index++;
 if(index >= img.length) index=0;
 track.scrollLeft = img[index].offsetLeft;
-
 });
 
 document.getElementById("prev").addEventListener("click",()=>{
@@ -14,6 +13,9 @@ index--;
 if(index<0) index=img.length-1;
 track.scrollLeft = img[index].offsetLeft;
 });
-img.setInterval(() => {
+
+setInterval(() => {
     index++;
-}, 1000);
+    track.scrollLeft=img[index].offsetLeft;
+    if(index>=img.length) index=0;
+},4500);

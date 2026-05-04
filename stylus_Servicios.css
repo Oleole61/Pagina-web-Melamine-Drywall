@@ -3,17 +3,16 @@
 html{
     margin: 0;
     padding: 0;
-    background-color: rgb(245, 232, 138); 
      
 }
 header{
     position: sticky;
     display: flex;
     top: 0;
-   background-color: rgba(153, 101, 21, 1);
-   height: 100px;
-   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-   z-index: 1000;
+    background-color:#1d1003;
+    height: 100px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
 }
 
 nav{
@@ -30,13 +29,13 @@ nav{
 
 
 nav a:hover{
-    color: rgb(231, 223, 70);
+     color: white;
     transform: translateY(-3px);
 
 }
 
 nav a{
-    color: rgb(255,253, 208);   
+    color: white; 
     text-decoration: none;
 }
 
@@ -48,17 +47,43 @@ header img {
   margin: 1%;
   margin-left: 25%;
   
+  
 }
 /*Fin de header*/
 
 /*Inicio de body*/
 body{
     margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+body::before{
+    content: "";
+    margin: 0;
+    position: fixed;
+    
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-image:url(Imagenes/Escritorio4K.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: darken;
 }
 /*Fin del body*/
 
 h1{
-    color:rgb(85, 52, 3);   
+    color:white;
+    text-shadow: 10px 2px 8px rgba(0,0,0,0.8);   
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -74,9 +99,6 @@ h1{
     margin-left: 8%;
     margin-right: 8%;
 }
-
-
-
 
 
 .filas{
