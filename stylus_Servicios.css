@@ -119,8 +119,8 @@ h1{
    background-color: #F5F5F5;
    box-shadow: 10px 9px 6px rgba(0,0,0,0.5);
    height: 450px;
-    width: 300px;
-    transition: 0.3s ease;
+   width: 300px;
+   transition: 0.3s ease;
 }
 
 .caja img{
