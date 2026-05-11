@@ -21,15 +21,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
     
 }
 
-
-.class a:hover{
-     color: white;
-    transform: translateY(-3px);
-
-}
 
 .links {
     width: 50%;
@@ -37,7 +32,7 @@ nav{
     margin-left: 4%;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 10px;
     
 }
 .links a{
@@ -45,8 +40,15 @@ nav{
     text-decoration: none;
     font-size: 22px;
     transition: 2s;
+    width: 150px;
+    text-align: center;
+    
 }
 
+.links a:hover {
+    animation:moverarriba 0.5s ease forwards;
+    
+}
 
 
 nav img {
@@ -75,6 +77,30 @@ nav img {
         margin: 10px;
     }
 }
+
+@keyframes moverarriba{
+    from{
+        transform: translateY(0);
+       
+    }
+    to{
+        transform: translateY(-5px); 
+       
+        
+    }
+}
+@keyframes cambiarcolor{
+    from{
+        
+    }
+    to{
+       
+        
+    }
+}
+
+
+
 /*Fin de header*/
 
 
@@ -128,6 +154,7 @@ main{
     text-align: center;
     color: white;
     text-shadow: 10px 2px 8px rgba(0,0, 0, 0.8);
+    animation: aparicionespontanea 2s ease;
 }
 /*Decoraciones del Texto*/
 h1{ 
@@ -160,6 +187,7 @@ h3{
     position: relative;
     width:50%;
     padding: 30px;
+    animation: aparicionespontanea 2s ease;
 
 }
 
@@ -207,9 +235,11 @@ h3{
 
 @keyframes aparicionespontanea{
     from{
+        transform: translatey(10px);
         opacity: 0;
     }
     to{
+        transform: translatey(0px);
         opacity: 1;
     }
 }
@@ -293,7 +323,27 @@ h3{
 footer{
     position: relative;
     background-color:#1d1003;
+    height: 100%;
+    width: 100%;
 }
+.primerfooter{
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.redessociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.img1{
+    width: 50px;
+    border-radius: 12px;  
+}
+
 
 .textofooter{
     display: flex;
@@ -318,12 +368,13 @@ iframe{
 }
 
 @media(max-width: 780px){
-   .invalid{
+   .textofooter{
+   width: 100%;
+    
+   }
+   .Ubicacion {
     display: none;
    }
-
-   footer{
-    width: 100%;
-   }
+   
 }
 
