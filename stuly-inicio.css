@@ -141,10 +141,10 @@ body::before{
     background-position: center;
     background-repeat: no-repeat;
 
-    filter: blur(4px);
+    filter: blur(5px);
     z-index: -1;
 
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.55);
     background-blend-mode: darken;
 }
 
@@ -157,6 +157,8 @@ main{
     flex-direction: column;
     gap: 10px;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 .main{
     display: flex;
@@ -164,6 +166,7 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 
@@ -174,17 +177,17 @@ main{
     margin: 10px;
     text-align: center;
     color: white;
-    text-shadow: 10px 2px 8px rgba(0,0, 0, 0.8);
     animation: aparicionespontanea 2s ease;
 }
 /*Decoraciones del Texto*/
 h1{ 
-  font-size:clamp(3rem, 10vw, 5rem); /* adaptable a pantalla */
+  font-size:clamp(3rem, 7vw, 5rem); /* adaptable a pantalla */
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
   line-height: 1.1; /* espacio entre líneas */
+  text-shadow: 10px 2px 8px rgba(0,0, 0, 1);
 }
     
 
@@ -194,6 +197,7 @@ h2{
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  text-shadow: 10px 2px 8px rgba(0,0, 0, 3);
 }
 
 /*Carrusel parte inicio*/
@@ -285,16 +289,42 @@ h2{
 h3{
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-shadow: 10px 4px 8px rgba(0,0, 0, 1);
+}
+
+h4{
+  font-size: 25px ;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 10%;
+  margin-top: 12px;
+}
+p{
+    font-size: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 0;
+    margin-top: 12px;
 }
 .fila-card{
     display: flex;
-    width: 100%;
-    gap: 20px;
+    width: 90%;
+    gap: 40px;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    
+    padding: 20px;
+    background-color: #1d100362;
+    border-radius: 20px;
 }
 .card{
     width: 300px;
@@ -336,6 +366,7 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px;
 }
 .card-front img{
     object-fit:cover;
@@ -460,6 +491,11 @@ iframe{
    .contenedor-carrusel{
     margin-bottom: 30px;
    }
-   
+   .fila-card{
+    flex-direction: column;
+   }
+   .card{
+    width: 90%;
+   }
 }
 
