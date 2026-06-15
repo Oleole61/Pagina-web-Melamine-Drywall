@@ -1,182 +1,140 @@
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A&L Muebles y Drywall</title>
-    <link rel="stylesheet" href="stuly-inicio.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:ital,wght@0,600;1,600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+         <title>A&L Muebles y Drywall</title> 
+         <link rel="stylesheet" href="stuly-inicio.css"> 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300&family=Lato:ital,wght@0,300;1,100&family=Montserrat&family=Oswald:wght@600&display=swap" rel="stylesheet"> 
+    </head> 
+    <body> 
+        <header class="relative flex w-full h-[100px] bg-[#311a03] shadow-lg z-[1000]"> 
+            <nav class="relative flex w-full h-full justify-between items-center "> 
+                <div class="links"> 
+                    <a href="Inicio.html">Inicio</a> 
+                    <a href="Servicios.html">Servicios</a> 
+                    <a href="Nosotros.html">Nosotros</a> 
+                    <a href="Contactanos.html">Contacto</a> 
+                </div> 
+                <img src="Imagenes/Logofinal.png" class="max-w-[350px] h-[100px] mr-[100px]" > 
+            </nav> 
+        </header> 
+        <main> 
+            <div class="main"> 
+                <article class="descripcion"> 
+                    <h1>Muebles de Melamine y Trabajos de Drywall </h1> 
+                    <h2>Si puedes imaginarlo, lo hacemos realidad</h2> 
+                </article> 
+                <div class="contenedor-carrusel"> 
+                    <button id="prev">⬅</button> 
+                    <div class="carrusel" id="carrusel"> 
+                        <div class="element">
+                            <img src="Imagenes/conjuentomueblesnegros2.jpeg">
+                        </div> 
+                        <div class="element">
+                            <img src="Imagenes/mesademelamine.jpeg">
+                        </div> 
+                        <div class="element">
+                            <img src="Imagenes/Escritorio4K.png">
+                        </div> 
+                        <div class="element">
+                            <img src="Imagenes/mueblenormal.jpeg">
+                        </div> 
+                        <div class="element">
+                            <img src="Imagenes/mueblesucio.jpeg">
+                        </div> 
+                        <div class="element">
+                            <img src="Imagenes/mueblesblancos.jpeg">
+                        </div> 
+                        <div class="element">
+                            <img src="Imagenes/mublemarronblancofondoazul.jpeg">
+                        </div> 
+                        <div class="element">
+                            <img src="Imagenes/mueblecocina.jpeg">
+                        </div> 
+                        <div class="element">
+                            <img src="Imagenes/closetdealuminuos.jpeg">
+                        </div> 
+                        <div class="element">
+                            <img src="Imagenes/conjuentomueblesnegros2.jpeg">
+                        </div> 
+                    </div> 
+                    <button id="next">➡</button> 
+                </div> 
+            </div> 
+            <h3>Mejores Trabajos</h3> 
+            <div class="fila-card"> 
+                <div class="card"> 
+                    <div class="card-inner"> 
+                        <div class="card-front"> 
+                            <img src="Imagenes/mejoresmuebles2.jpg"> 
+                        </div> 
+                        <div class="card-back"> 
+                            <h4>Escritorio modular 
+                                <br>en L</h4> 
+                                <p>Medidas: 160 cm (largo escritorio) x 150 cm (ancho retorno) x 210 cm (alto total).</p> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="card"> 
+                        <div class="card-inner"> 
+                            <div class="card-front"> 
+                                <img src="Imagenes/mejorcloset2.webp"> 
+                            </div> 
+                            <div class="card-back"> 
+                                <h4>Ropero clóset moderno</h4> 
+                                <p>Medidas: 220 cm (ancho) x 210 cm (alto) x 55 cm (profundidad).</p> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="card"> 
+                        <div class="card-inner"> 
+                            <div class="card-front"> 
+                                <img src="Imagenes/mejorcentromesa.webp"> 
+                                <h4>Cocinas</h4> 
+                            </div> 
+                            <div class="card-back"> 
+                                <h4>Centro de mesa moderno</h4> 
+                                <p>Medidas: 95 cm (largo) x 50 cm (ancho) x 42 cm (alto).</p> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </main> 
+            <footer> 
+                <article class="primerfooter"> 
+                    <h2>Nuestras redes sociales</h2> 
+                    <div div class="redessociales"> 
+                        <img src="Imagenes/facebook_negro.jpg" alt="" class="img1"> 
+                        <img src="Imagenes/watsapnewnegro.jpg" alt="" class="img1"> 
+                        <img src="Imagenes/titktoknegro1.jpg" alt="" class="img1" > 
+                    </div> 
+                </article> 
+                <div class="textofooter"> 
+                    <article> 
+                        <h2>Contactanos</h2> 
+                        <p>Tef: 999-999-999</p> 
+                        <p>Escribenos al WhatsApp</p> 
+                    </article> 
+                    <article> 
+                        <h2>Sobre nosotros</h2> 
+                        <p>Descripción</p> 
+                        <p>¿Por que elejirnos?</p> 
+                        <p>Nuestros servicios</p> 
+                    </article> 
+                    <article class="Ubicacion"> 
+                        <h2>Ubicación</h2> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0426835308663!2d-77.01669768975457!3d-12.109230543016643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c906e85d9d2f%3A0xe12a5409e5709a98!2sVidrieria%20Moscoso!5e0!3m2!1ses!2spe!4v1777418413943!5m2!1ses!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> 
 
-</head>
-<body>
+                        </iframe> 
+                    </article> 
+                </div> 
+            </footer> 
+            <script src="Carrusel.js">
 
-    <header>
-
-        <nav>
-            <div class="links">
-                <a href="Inicio.html">Inicio</a>
-                <a href="Servicios.html">Servicios</a>
-                <a href="Nosotros.html">Nosotros</a>
-                <a href="Contactanos.html">Contacto</a>
-            </div>
-                <img src="Imagenes/Logo.png">
-        </nav>
-        
-        
-            
-    </header>
-
-    <main>
-        <div class="main">
-        <article class="descripcion">
-            <h1>Muebles de Melamine y Trabajos de Drywall </h1>
-            <h2>Si puedes imaginarlo, lo hacemos realidad</h2>
-          
-        </article>
-        
-
-        <div class="contenedor-carrusel">
-        <button id="prev">⬅</button>
-        <div class="carrusel" id="carrusel">
-            
-            <div class="element"><img src="Imagenes/conjuentomueblesnegros2.jpeg"></div>
-            <div class="element"><img src="Imagenes/mesademelamine.jpeg"></div>
-            <div class="element"><img src="Imagenes/Escritorio4K.png"></div>
-            <div class="element"><img src="Imagenes/mueblenormal.jpeg"></div>
-            <div class="element"><img src="Imagenes/mueblesucio.jpeg"></div>
-            <div class="element"><img src="Imagenes/mueblesblancos.jpeg"></div>
-            <div class="element"><img src="Imagenes/mublemarronblancofondoazul.jpeg"></div>
-            <div class="element"><img src="Imagenes/mueblecocina.jpeg"></div>
-            <div class="element"><img src="Imagenes/closetdealuminuos.jpeg"></div>
-            <div class="element"><img src="Imagenes/conjuentomueblesnegros2.jpeg"></div>
-          
-
-        </div>
-
-        <button id="next">➡</button>
-        
-        
-        </div>
-        </div>
-        
-
-
-        <h3>Mejores Trabajos</h3>
-        <div class="fila-card">
-           
-        <div class="card">
-            <div class="card-inner">
-
-                <div class="card-front">
-                    <img src="Imagenes/mejoresmuebles2.jpg">
-                    
-                </div>
-
-                 <div class="card-back">
-                    <h4>Escritorio modular en L</h4>
-                    <p>Combina acabado de madera y blanco. Incluye 
-                        gabinetes superiores, cajonera, repisas 
-                        abiertas con iluminación LED y un panel
-                         de corcho.</p>
-                    <p>Medidas: 160 cm (largo escritorio) x 150 cm (ancho retorno) x 210 cm (alto total).</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-            <div class="card-inner">
-
-                <div class="card-front">
-                    <img src="Imagenes/mejorcloset2.webp">
-                    
-                </div>
-
-                 <div class="card-back">
-                    <h4>Ropero clóset moderno</h4>
-                    <p>En color blanco. Cuenta con un diseño de tres amplias 
-                        puertas corredizas revestidas con espejos de cuerpo 
-                        entero y sutiles detalles de líneas horizontales 
-                        decorativas.</p>
-                    <p>Medidas: 220 cm (ancho) x 210 cm (alto) x 55 cm (profundidad).</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="card">
-            <div class="card-inner">
-
-                <div class="card-front">
-                    <img src="Imagenes/mejorcentromesa.webp">
-                    <h4>Cocinas</h4>
-                </div>
-
-                 <div class="card-back">
-                    <h4>Centro de mesa moderno</h4>
-                    <p>En color blanco con 
-                        un cajón amarillo y patas de madera inclinadas. 
-                        Incluye un espacio abierto y un cajón 
-                        organizador.</p>
-                    <p>Medidas: 95 cm (largo) x 50 cm (ancho) x 42 cm (alto).</p>
-                </div>
-
-            </div>
-
-        </div>
-
-        </div>
-        
-        
-    
-    </main>
-
-    <footer>
-        <article class="primerfooter">
-           <h2>Nuestras redes sociales</h2>
-             <div div class="redessociales">
-                <img src="Imagenes/facebook_negro.jpg" alt="" class="img1"> 
-                <img src="Imagenes/watsapnewnegro.jpg" alt="" class="img1"> 
-                <img src="Imagenes/titktoknegro1.jpg" alt="" class="img1" > 
-             </div>
-        </article>
-
-        <div class="textofooter">
-
-        <article>
-
-            <h2>Contactanos</h2>
-            <p>Tef: 999-999-999</p>
-            <p>Escribenos al WhatsApp</p>
-            
-        </article>
-
-        <article>
-
-            <h2>Sobre nosotros</h2>
-            <p>Descripción</p>
-            <p>¿Por que elejirnos?</p>
-            <p>Nuestros servicios</p>
-
-        </article>
-
-        <article class="Ubicacion">
-
-            <h2>Ubicación</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0426835308663!2d-77.01669768975457!3d-12.109230543016643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c906e85d9d2f%3A0xe12a5409e5709a98!2sVidrieria%20Moscoso!5e0!3m2!1ses!2spe!4v1777418413943!5m2!1ses!2spe"  
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            
-        </article>
-
-        </div>
-
-    </footer>
-</body>
+            </script> 
+            </body> 
 </html>
